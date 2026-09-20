@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Baniota 개인용 gws cli 연동의 Google 데이터 접근, 사용, 저장, AI 처리, 삭제 및 권한 철회 정책입니다.">
+  <meta name="referrer" content="no-referrer">
+  <title>개인정보처리방침 | gws cli · Baniota</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header class="site-header"><a href="../" class="wordmark">BANIOTA</a><nav aria-label="주 메뉴"><a href="../">연동 안내</a><a href="./" aria-current="page">개인정보처리방침</a></nav></header>
+  <main id="main">
+    <p class="eyebrow">PRIVACY &amp; DATA USE</p>
+    <h1>개인정보처리방침</h1>
+    <p class="lead">gws cli · Baniota 개인용 Google Workspace 연동</p>
+    <p class="muted">시행일 및 최종 업데이트: 2026-09-20<br>운영자: Baniota / mrsono0 · <a href="mailto:mrsono0@gmail.com">mrsono0@gmail.com</a></p>
+    <section><h2>1. 적용 범위</h2><p>이 방침은 운영자가 Hermes Agent와 Google Workspace CLI(gws)를 이용해 자신의 Google 계정과 개인 학습자료를 관리하는 연동에 적용됩니다. 공개 안내 사이트와 비공개 자동화 실행 환경은 분리됩니다. 불특정 다수의 계정을 연결하는 서비스나 Google의 공식 제품이 아닙니다.</p></section>
+    <section><h2>2. 접근하는 데이터</h2><ul>
+      <li><strong>Gmail:</strong> 사용자가 지정한 대상 메일의 발신·수신자, 제목, 날짜, 식별자, 라벨, 본문, 첨부파일 등.</li>
+      <li><strong>Google Drive:</strong> 지정된 자료와 폴더의 이름, 식별자, 메타데이터 및 업로드·다운로드·동기화에 필요한 파일 내용.</li>
+      <li><strong>기타 Workspace:</strong> 사용자가 기능을 요청하고 권한을 허용한 경우 해당 작업에 필요한 일정, 문서, 스프레드시트 및 연락처 데이터.</li>
+      <li><strong>연결·운영 정보:</strong> OAuth 클라이언트 정보, 접근·갱신 토큰, 승인된 권한, 작업 식별자, 오류·실행 기록. Google 계정 비밀번호를 자동화 도구에 전달하도록 요구하지 않습니다.</li>
+    </ul><p>실제 API 호출은 사용자가 승인한 목적과 범위에 한정합니다. 권한을 부여받았다는 이유만으로 전체 메일·Drive 파일을 일괄 수집하지 않습니다.</p></section>
+    <section><h2>3. 이용 목적</h2><p>메일 분류·보관, 첨부파일 정리, 학습내용 요약 및 출처 연결, 비공개 Obsidian 노트 관리, 지정된 강의·학습 산출물의 Drive 전송과 동기화, 사용자가 요청한 Workspace 작업에 이용합니다. 연결 상태 확인, 오류 진단 및 중복 작업 방지를 위해 필요한 최소 운영 정보를 처리합니다.</p><p>메일 발송·삭제·외부 공유 및 삭제를 전파하는 동기화는 사용자가 승인한 작업 정책 없이 수행하지 않습니다.</p></section>
+    <section><h2>4. AI 처리와 외부 제공자</h2><p>분류·요약 등 AI 기능을 요청한 경우, 작업에 필요한 메일·문서 일부가 사용자가 선택한 모델 또는 API 제공자에게 추론 입력으로 전달될 수 있습니다. 로컬 모델과 외부 모델의 데이터 경로는 다르며, 외부 제공자의 보관·하위 처리 조건은 해당 제공자의 계약과 설정에 따릅니다. 자동 처리를 활성화하기 전에 운영자는 제공자, 입력 범위 및 보관·학습 이용 조건을 확인해야 합니다. 조건을 확인하지 않은 제공자에게 Google 사용자 데이터를 보내지 않습니다.</p><p>Google 사용자 데이터를 판매하거나 광고 타겟팅, 신용도 판단 또는 범용 AI·머신러닝 모델의 학습·개선에 사용하지 않습니다. 사람의 열람은 계정 소유자의 지시·명시적 동의, 보안 대응 또는 법적 의무 등 적용 정책이 허용하는 경우로 제한합니다.</p><p lang="en">The use and transfer of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p></section>
+    <section><h2>5. 저장 위치와 보호</h2><p>다운로드한 첨부파일, 처리 결과, 개인 노트 및 실행 기록은 운영자가 지정한 비공개 서버·저장소에 보관합니다. Drive로 전송하도록 선택한 자료는 지정된 Google 계정과 폴더에 보관하며, 공개 링크나 다른 사용자와의 공유는 별도 승인 없이 만들지 않습니다.</p><p>OAuth 토큰과 클라이언트 비밀값은 공개 Git 저장소·안내 페이지·공개 배포물에 포함하지 않습니다. 자격증명 파일은 실행 계정으로 접근을 제한하고, 외부 API 통신에는 HTTPS를 사용합니다. 대화·로그·백업에 작업 내용이 포함될 수 있으므로 이를 개인자료와 동일하게 비공개로 관리합니다. 이 사이트 자체에는 로그인, 파일 업로드, Google API 호출 또는 토큰 수신 기능이 없습니다.</p></section>
+    <section><h2>6. 보관·삭제</h2><p>인증정보는 연동을 유지하는 동안 보관하며, 연결 종료 시 Google 접근 권한을 철회하고 실행 환경의 관련 자격증명을 삭제합니다. 자료·노트는 사용자가 저장을 요청한 결과물이므로 사용자가 삭제할 때까지 지정한 비공개 저장소에 남을 수 있습니다. 고정된 자동 만료·자동 삭제를 보장하지 않습니다.</p><p>작업 대화, 로그, 다운로드 및 백업에 포함된 사본은 별도로 삭제해야 할 수 있습니다. 백업은 운영자가 정한 보존 주기에 따라 만료되거나 별도로 삭제됩니다. Google 권한 철회는 이미 저장된 사본이나 Drive 파일을 자동으로 지우지 않습니다. 삭제 대상과 사본 범위를 확인한 뒤 처리합니다.</p></section>
+    <section><h2>7. 권한 철회와 요청</h2><p><a href="https://myaccount.google.com/connections">Google 계정의 서드 파티 연결 관리</a>에서 이 연동에 대한 접근 권한을 철회할 수 있습니다. 철회 후 새 API 접근·자동 갱신은 실패할 수 있으며 관련 예약 작업을 중지해야 합니다. 저장된 자료 확인·정정·삭제 또는 데이터 처리 문의는 <a href="mailto:mrsono0@gmail.com">mrsono0@gmail.com</a>으로 요청할 수 있습니다.</p></section>
+    <section><h2>8. 공개 사이트 방문 정보</h2><p>이 안내 사이트는 GitHub Pages에서 제공하는 정적 HTML·CSS입니다. 운영자가 별도 분석 스크립트, 광고, 추적 쿠키 또는 웹 양식을 설치하지 않습니다. 다만 GitHub는 사이트 제공·보안을 위해 방문 IP 등 접속 정보를 처리할 수 있습니다. 자세한 내용은 <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub 개인정보처리방침</a>을 참고하세요. 외부 링크를 열면 해당 서비스의 정책이 적용됩니다.</p></section>
+    <section><h2>9. 방침 변경</h2><p>데이터 이용 목적, 전송 제공자 또는 처리 범위를 변경할 때 이 문서를 갱신합니다. 기존 동의와 다른 방식으로 Google 데이터를 이용하기 전에는 사용자에게 변경사항을 알리고 필요한 동의를 받습니다.</p></section>
+    <section class="english" lang="en"><h2>English summary</h2><p>Baniota's personal gws cli integration accesses only the Google data needed for the user's requested email organization, learning-note management and selected Drive synchronization. Other Workspace operations require a specific user request and granted permissions. The public website does not collect Google passwords, tokens, emails or files.</p><p>Selected content may be sent to a user-chosen AI provider for inference only after its data-use and retention conditions have been checked. Google user data is not sold, used for advertising or used to train or improve generalized AI/ML models. Use and transfer must comply with Google's Limited Use requirements.</p><p>Credentials, notes, downloads, logs and backups are kept in the operator's private environment; user-selected files may also be stored in Google Drive. Revoking access does not delete existing copies. Retention and deletion must cover the relevant notes, downloads, logs and backups. Users may revoke access in their Google account or contact the operator at <a href="mailto:mrsono0@gmail.com">mrsono0@gmail.com</a>. GitHub Pages may process visitors' connection information under its own privacy statement.</p></section>
+  </main>
+  <footer><a href="../">← 연동 안내로 돌아가기</a><span>gws cli · Baniota</span></footer>
+</body>
+</html>
